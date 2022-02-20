@@ -1,0 +1,168 @@
+body {
+    display: flex;
+    margin: 0;
+    flex-direction: row;
+    font-family: 'Roboto', sans-serif;
+}
+
+body, html {
+    height: 100%;
+    width: 100%;
+}
+
+h1 {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 3.5rem;
+}
+
+h2 {
+    font-size: 1.7rem;
+}
+
+h3 {
+    margin-top: 0;
+    font-size: 1.6rem;
+}
+
+.photo-author>a {
+    text-decoration: none;
+    color: rgba(146, 143, 140, 0.377);
+}
+
+.photo-author>a:hover {
+    color: rgba(75, 70, 70, 0.74);
+}
+
+.image-container {
+    background-image: url(main.jpeg);
+    background-size: cover;                    
+    background-repeat: no-repeat;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.title {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.title-text {
+    height: 100px;
+    width: 100%;
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.photo-author {
+    color: rgba(240, 237, 234, 0.377);
+    align-self: center;
+}
+
+.main-container {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    padding: 60px 0 100px;
+    background-color: rgba(245, 236, 209, 0.603);
+}
+
+.upper-text, .main-form, .lower-text {
+    padding: 25px 50px 25px 40px;
+}
+
+.main-form {
+    background-color: white;
+    box-shadow: 0px 3px 5px #888, 0px -3px 5px #888;;
+    margin-right: 0;
+}
+
+form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 30px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: rgb(53, 53, 53);
+}
+
+input {
+    height: 23px;
+    border: 0.125em solid rgba(190, 190, 190, 0.473); 
+    outline: none;
+    border-radius: 5px;
+}
+
+input:focus {
+    border-color: rgba(47, 47, 216, 0.664);
+}
+
+.valid:not(:focus):not(:placeholder-shown) {
+    border-color: rgba(54, 255, 71, 0.712);
+}
+
+.invalid:not(:focus):not(:placeholder-shown) {
+    border-color: red;
+}
+
+/* input:not(:focus):not(:placeholder-shown):valid {
+    border-color: rgba(54, 255, 71, 0.712);
+}
+
+input:not(:focus):not(:placeholder-shown):invalid {
+    border-color: red;
+} */
+
+/* CSS */
+.button-52 {
+  font-size: 16px;
+  font-weight: 200;
+  letter-spacing: 1px;
+  padding: 13px 20px 13px;
+  outline: 0;
+  border: 1px solid black;
+  cursor: pointer;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-52:after {
+  content: "";
+  background-color: #ffe54c;
+  width: 100%;
+  z-index: -1;
+  position: absolute;
+  height: 100%;
+  top: 7px;
+  left: 7px;
+  transition: 0.2s;
+}
+
+.button-52:hover:after {
+  top: 0px;
+  left: 0px;
+}
+
+@media (min-width: 768px) {
+  .button-52 {
+    padding: 13px 50px 13px;
+  }
+}
+
+
+.login-a {
+    text-decoration: none;
+    color: rgb(247, 165, 44);
+}
+

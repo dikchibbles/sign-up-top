@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto&display=swap" rel="stylesheet">   
+    <title>Document</title>
+</head>
+<body>
+    <div class="image-container">
+        <div class="title">
+            <div class="title-text"><h1>Don't forget to Sign Up!</h1></div>
+        </div>
+        <p class="photo-author">Photo by <a href="https://unsplash.com/@1millidollars">1MilliDollars</a> on <a href="https://unsplash.com/">Unsplash</a></p>
+    </div>
+    <div class="main-container">
+        <div class="upper-text">
+            <h2>This is not an actual website. But, you can still try out our form submitting simulator.</h2>
+        </div>
+        <div class="main-form">
+            <h3>Let's do this!</h3>
+            <form action="#" method="get" id="sign-up">
+                <div class="firstName">
+                    <label for="firstName">First Name</label>
+                    <input type="text" id="firstName" name="firstName" placeholder="Leo" minlength="1" required>
+                </div>
+                <div class="lastName">
+                    <label for="lastName">Last Name</label>
+                    <input type="text" id="lastName" name="lastName" placeholder="Leo" minlength="1" required>
+                </div>
+                <div class="email">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Leo" required>
+                </div>
+                <div class="phone-num">
+                    <label for="phone-num">Telephone</label>
+                    <input type="number" id="phone-num" name="phone_num" placeholder="Leo" required>
+                </div>
+                <div class="password">
+                    <label for="password">Password</label>
+                    <input type="text" id="password" name="password" placeholder="Leo" required>
+                </div>
+                <div class="confirm-password">
+                    <label for="confirm-password">Confirm Password</label>
+                    <input type="text" id="confirm-password" name="confirm_password" placeholder="Leo" required>
+                </div>
+            </form>
+        </div>
+        <div class="lower-text">
+            <button class="button-52" type="submit" form="sign-up">Sign Up</button>
+            <h5>Already have an account? <a href="#" class="login-a">Log in</a></h5>
+        </div>
+    </div>
+    <script src="javascript.js"></script>
+</body>
+</html>
